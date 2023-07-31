@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>amazon project</title>
+   
+    <link rel="stylesheet" href=".css">
+</head>
+<style>
+    * {
+        margin: 0px;
+        font-family: arial;
+        border: border-box;
+    }
+    .navbar {
+        height: 60px;
+        background-color: #0f1111;
+        color: white;
+        align-items: center;
+        justify-content: space-evenly;
+      
+        
+       
+    }
+    a {
+        color: white;
+        font-weight: 600;
+       align-items: center;
+        text-decoration: none;
+        position: relative;
+        top: 15px;
+       left: 15px;
+    }
+    select {
+        align-items: center;
+        position: absolute;
+        top: 3vh;
+        left: 23vw;
+        
+    }
+    
+    input {
+        position: absolute;
+       top: 18px;
+      width: 500px;
+      border-radius: 6px;
+      left: 26vw;
+    }
+    span {
+        font-size: 20px;
+        font-weight: 700px;
+        position: relative;
+        left:3vw;
+        
+    }
+    .p{
+        position: relative;
+      left: 60vw;
+        font-weight: 400;
+       bottom: 20px;
+      font-size: 15px;
+     
+    } 
+   
+   
+    .span1 {
+        position: relative;
+        bottom: 40px;
+        left: 6vw;
+        align-items: center;
+        
+    }
+    .span2 {
+        position: relative;
+        bottom: 25px;
+        left: 19vw;
+        align-items: center;
+       
+    }
+    
+    .span3 {
+        position: relative;
+        bottom: 55px;
+        left: 29vw;
+        font-size: 25px;
+        font-weight: bold;
+        align-items: center;
+       
+    }
+    
+    #box1 {
+        height: 30px;
+        width: 100vw;
+        background-color: #0C2D48;
+        display: flex;
+        position: relative;
+      bottom: vh;
+       
+    }
+    li {
+        display: inline-table;
+     position: relative;
+     bottom: 6px;
+    }
+    #a1 {
+        position: relative;
+      align-items: center;
+        left: 40vw;
+       top: 1vh;
+    }
+    #body1 {
+        background-image: url(https://www.ikea.com/images/aepplaryd-series-06416af284f5f4847c3c99a1f8f25f8e.jpg?f=s);
+        background-size: cover;
+    }
+    #pp {
+        position: absolute;
+      top: 20vh;
+      font-weight: bold;
+      font-size: 35px;
+    }
+   
+    #box2 {
+        background-color: white;
+        text-align: center;
+        position: relative;
+        top: 84vh;
+        width:95vw;
+        left: 23px;
+    }
+    
+    #box3 {
+        position: relative;
+        top: 88vh;
+        left: 2vw;
+        background-color: white;
+       width: 23vw;
+       height: 50.3vh;
+    }
+    #para1 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        position: relative;
+        top: 10px;
+    }
+    #para2 {
+        font-weight: bold;
+       
+        font-size: 24px;
+        position: relative;
+        top: 38vh;
+      left: 5vw;
+    } 
+    #a2 {
+        color:#0C2D48;
+        position: relative;
+        left: 3px;
+        font-size: 20px;
+        top: 4px;
+    }   
+    #box4 {
+        position: absolute;
+        top: 105vh;
+        left: 26vw;
+        background-color: white;
+       width: 23vw;
+       height: 50vh;
+      
+    }
+    #box5 {
+        position: absolute;
+       left: 50vw;
+     bottom: 22vh;
+       background-color: white;
+       width: 23vw;
+       height: 50vh;
+       top: 105vh;
+    }
+    #box6 {
+        position: absolute;
+       left: 74.5vw;
+ top:702px;
+       background-color: white;
+       width: 23vw;
+     height: 50vh;
+    }
+    #box7 {
+        background-color: white;
+       width: 23vw;
+       height: 50vh;
+       position: absolute;
+       left: 2vw;
+  top: 160vh;
+    }
+    #box8 {
+        background-color: white;
+       width: 23vw;
+       height: 50vh;
+       position: absolute;
+       left: 26vw;
+      top: 160vh;
+    }
+    #box9 {
+        background-color: white;
+       width: 23vw;
+       height: 50vh;
+       position: absolute;
+       left: 50vw;
+      top: 160vh;
+    }
+    #box10 {
+        background-color: white;
+       width: 23vw;
+       height: 50vh;
+       position: absolute;
+       left: 75vw;
+      top: 160vh;
+    }
+   #box11 {
+    background-color: white;
+       width: 23vw;
+       height: 50vh;
+       position: absolute;
+       left: 2vw;
+      top: 215vh;
+   }
+   #box12 {
+    background-color: white;
+       width: 23vw;
+       height: 50vh;
+       position: absolute;
+       left: 26vw;
+      top: 215vh;
+   }
+   #box13 {
+    background-color: white;
+       width: 23vw;
+       height: 50vh;
+       position: absolute;
+       left: 50vw;
+      top: 215vh;
+   }
+   #box14 {
+    background-color: white;
+       width: 23vw;
+       height: 50vh;
+       position: absolute;
+       left: 75vw;
+      top: 215vh;
+   }
+   .flox {
+    width:100vw;
+    height: 4vh;
+    position: relative;
+    background-color: white;
+    top:198vh ;
+   }
+  #box15 {
+    background-color: #0C2D48;
+    width: 100vw;
+    height: 7vh;
+    position:absolute;
+    top: 269vh;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+  }
+  #para3 {
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+  }
+ #box16 {
+    width: 100vw;
+    height: 50vh;
+    background-color: #050A30;
+    position: absolute;
+    top: 276vh;
+ }
+ #para4 {
+    color: white;
+    position: relative;
+    top: 10vh;
+    left: 12vw;
+    font-size: 15px; 
+ }
+ #para5{
+    color: white;
+    position: absolute;
+  top: 10vh;
+    left: 32vw; 
+    font-size: 15px; 
+ }
+ #para6{
+    color: white;
+    position: absolute;
+  top: 10vh;
+    left: 52vw; 
+    font-size: 15px; 
+ }
+ #para7 {
+    color: white;
+    position: absolute;
+  top: 10vh;
+    left: 72vw; 
+    font-size: 15px; 
+ }
+ 
+    </style>
+<body>
+    <div class="navbar">
+        <div class="logo border">
+         <div class="box1">
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/019/040/342/non_2x/amazon-logo-editorial-free-vector.jpg" style="width: 130px; height: 50px; position: relative; bottom: 11px;"></a>
+            <a href="#" style="position: absolute; left: 12vw; bottom: 2vh;;">Deliver to India
+               </a>
+            <select name="all">
+                <option value="All" style="font-weight: bold;">All</option>
+             </select>
+             <input placeholder="Search Amazon">
+             <p class="p " style="align-items: center;"><span style=" position: absolute; bottom: 14vh; font-size: 15px; font-weight: bold; left: 85px;">Hello, sing in</span><br>
+             <span style="position:relative; bottom:19px; right:15vw;">Accounts and lists</span</p>
+                
+                <span class="span1" style="font-size: 15px; font-weight: 400;"><a href="#"> Returns</a></span><br>
+                <span class="span2" style="bold; font-size: 20px;">& Order</span><br>
+              <span class="span3">Cart</span>
+         </div>
+          </div>
+        </div>
+    </body>
+    <body id="body1">
+        <p id="pp">Refresh your home with<br>essentials under $50</p>
+        <div id="box1">
+            <ul>
+                <li><a href="#" id="a">All</a></li>
+                <li><a href="#" id="a">Today's Deal</a></li>
+                <li><a href="#" id="a">Customer Services</a></li>
+                <li><a href="#" id="a">Registry</a></li>
+                <li><a href="#" id="a">Gift Cards</a></li>
+                <li><a href="#" id="a">Sell</a></li>
+                <a href="#" id="a1">Shop deals in Electronic</a>
+            </ul>
+        </div>
+        <div id="box2">You are on amazon.com. You can also shop on Amazon India for millions of products with last local delivery.<span style="color: green; position: relative; left: 0vw;"> here to go to amazon.in </span></div>
+       <body id="body2">
+<div id="box3"><p id="para1">Health & personal Care</p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbw9eqv9Ilo3XQDM15j2ePqxqp6nTGP7D7sA&usqp=CAU" style="position: absolute;top: 50px; left: 30px; width: 19vw; height:35vh;"><p id="para2"><a href="#"id="a2">See more</a></p></div>
+<div id="box4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_9PsXUTAaC1aIhOHSHo5eyt1tio3PxRsPQ&usqp=CAU" style="position: absolute; ;top: 50px; left: 30px; width: 19vw; height:35vh;"><p id="para1">Furniture & Home Decor</p><p id="para2"><a href="#"id="a2">See more</a></p></div>
+<div id="box5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQof-ycFEz-WUkMKOmiTGCenBq6S3vH2OGhYA&usqp=CAU" style="position: absolute; ;top: 50px; left: 30px; width: 19vw; height:35vh;"><p id="para1">Home & Appliances</p><p id="para2"><a href="#"id="a2">See more</a></p></div>
+<div id="box6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF-cEwzbRYIshCDGvFYcE_zFXXZrclwooerA&usqp=CAU" style="position: absolute; ;top: 50px; left: 30px; width: 19vw; height:35vh;"><p id="para1">Electronic's</p><p id="para2"><a href="#"id="a2">See more</a></p></div>
+<div id="box7"><img src="https://i.pinimg.com/236x/32/27/9c/32279cbb66160c4825f3e666ec6445a5.jpg" style="position: absolute; top:8vh ; left:24px ; height: 35vh; width: 19vw;"><p id="para1">Beauty Picks</p><p id="para2"><a href="#"id="a2">See more</a></p></div></div>
+<div id="box8"><img src="https://s.yimg.com/ny/api/res/1.2/bum8kWwrcmHYibi10cN9cA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ2MQ--/https://media.zenfs.com/en/purewow_185/b4a5de5cf4ebdd7e77c24306d8a0d04c"style="position: absolute; top:8vh ; left:24px ; height: 35vh; width: 19vw;"><p id="para1">Discover Fashion Trends</p><p id="para2"><a href="#"id="a2">See more</a></p></div></div> 
+  <div id="box9"><img src="https://nypost.com/wp-content/uploads/sites/2/2023/01/pet-store-new.jpg?quality=75&strip=all" style="position: absolute; top:8vh ; left:24px ; height: 35vh; width: 19vw;"><p id="para1">Pet Supplies</p><p id="para2"><a href="#"id="a2">See more</a></p></div>    
+  <div id="box10"><img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt9prodlp/products/p-personalized-couple-teddy-with-chocolates-201127-m.jpg" style="position: absolute; top:8vh ; left:24px ; height: 35vh; width: 19vw;"><p id="para1">Toys Arival!</p><p id="para2"><a href="#"id="a2">See more</a></p></div>    
+ <div id="box11"><img src="https://images.hindustantimes.com/img/2022/12/22/550x309/istockphoto-1279108197-170667a_1671687926903_1671687937504_1671687937504.jpg"style="position: absolute; top:8vh ; left:24px ; height: 35vh; width: 19vw;"><p id="para1">Footwear</p><p id="para2"><a href="#"id="a2">See more</a></p></div>
+ <div id></div>         
+ <div id="box12"><img src="https://time.com/shopping/static/50461b9147508c0b9b2ad17a1755eec1/cfc65/best-smartwatches.jpg"style="position: absolute; top:8vh ; left:24px ; height: 35vh; width: 19vw;"><p id="para1">Footwear</p><p id="para2"><a href="#"id="a2">See more</a></p></div>
+ <div id></div>         
+ <div id="box13"><img src="https://media.istockphoto.com/id/1293366109/photo/this-one-match-perfect-with-me.jpg?s=612x612&w=0&k=20&c=wJ6yYbRrDfdmoViuQkX39s2z_0lCiNQYgEtLU--0EbY="style="position: absolute; top:8vh ; left:24px ; height: 35vh; width: 19vw;"><p id="para1">Mens Fashion</p><p id="para2"><a href="#"id="a2">See more</a></p></div>
+ <div id></div>         
+ <div id="box14"><img src="https://media.cnn.com/api/v1/images/stellar/prod/201120161550-best-dslr-cameras-for-beginners-nature.jpg?q=w_2001,h_1127,x_0,y_0,c_fill"style="position: absolute; top:8vh ; left:24px ; height: 35vh; width: 19vw;"><p id="para1">DSLR Camera</p><p id="para2"><a href="#"id="a2">See more</a></p></div>
+ <div class="flox"></div>
+ <div id="box15"><p id="para3">Back to top</p></div>  
+ <div id="box16"><p id="para4">Get to Know Us<br>
+    About <br>
+    Careers<br>
+    Press Releases<br>
+    Amazon Science</p>
+    <p id="para5">Contact with us<br>
+        Facebook<br>
+        Twitter<br>
+        Instagram</p>
+        <p id="para6">Money with Us <br>
+            Sell on Amazon<br>
+            Sell under Amazon Accelerator<br>
+            Protect and Build Your Brand<br>
+            Amazon Global Selling<br>
+            Become an Affiliate<br>
+            Fulfilment by Amazon<br>
+            Advertise Your Products<br>
+            Amazon Pay on Merchants</p>
+            <p id="para7">Let Us Help You<br>
+                COVID-19 and Amazon<br>
+                Your Account<br>
+                Returns Centre<br>
+                100% Purchase Protection<br>
+                Amazon App Download<br>
+                Help</p>
+               
+            </div>     
